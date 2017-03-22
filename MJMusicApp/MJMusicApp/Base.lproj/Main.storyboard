@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,22 +21,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Michael_Jackson.svg" translatesAutoresizingMaskIntoConstraints="NO" id="ktv-jH-sLC">
-                                <rect key="frame" x="43.5" y="40" width="233" height="301"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Michael_Jackson.svg" translatesAutoresizingMaskIntoConstraints="NO" id="qfX-sc-9Bc">
+                                <rect key="frame" x="40" y="66" width="240" height="232"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="301" id="3Hu-cr-s2z"/>
-                                    <constraint firstAttribute="width" constant="233" id="PPF-fW-4rC"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="233" id="RUY-Xy-eLU"/>
-                                    <constraint firstAttribute="height" constant="301" id="faH-KW-xWx"/>
+                                    <constraint firstAttribute="width" constant="240" id="R75-Gq-hpb"/>
+                                    <constraint firstAttribute="height" constant="232" id="iye-Tx-AE4"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGj-cM-ONo">
+                                <rect key="frame" x="50" y="335" width="220" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Sle-D6-gk8"/>
+                                    <constraint firstAttribute="height" constant="30" id="v3n-RE-Qf8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="au1-S2-9Vo">
+                                <rect key="frame" x="50" y="390" width="220" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DpW-hw-gOO"/>
+                                    <constraint firstAttribute="width" constant="220" id="ha7-Xs-69D"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ktv-jH-sLC" secondAttribute="trailing" constant="27.5" id="MDH-tK-Y0z"/>
-                            <constraint firstItem="ktv-jH-sLC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27.5" id="Nbi-V4-blz"/>
-                            <constraint firstItem="ktv-jH-sLC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="PBa-Zd-hXB"/>
-                            <constraint firstItem="ktv-jH-sLC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btv-wG-BCB"/>
+                            <constraint firstItem="au1-S2-9Vo" firstAttribute="top" secondItem="nGj-cM-ONo" secondAttribute="bottom" constant="25" id="9T3-UO-TiW"/>
+                            <constraint firstItem="nGj-cM-ONo" firstAttribute="top" secondItem="qfX-sc-9Bc" secondAttribute="bottom" constant="37" id="FB0-fh-8FA"/>
+                            <constraint firstItem="qfX-sc-9Bc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G3m-jq-MdW"/>
+                            <constraint firstItem="au1-S2-9Vo" firstAttribute="trailing" secondItem="nGj-cM-ONo" secondAttribute="trailing" id="J48-Mk-PzS"/>
+                            <constraint firstItem="au1-S2-9Vo" firstAttribute="leading" secondItem="nGj-cM-ONo" secondAttribute="leading" id="Pxb-t3-cDl"/>
+                            <constraint firstItem="qfX-sc-9Bc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="eMl-kN-uhL"/>
+                            <constraint firstItem="nGj-cM-ONo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qi1-ri-EMc"/>
                         </constraints>
                     </view>
                 </viewController>
