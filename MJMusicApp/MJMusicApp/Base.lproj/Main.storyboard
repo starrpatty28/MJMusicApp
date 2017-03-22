@@ -313,6 +313,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="dH8-lE-99a" eventType="touchUpInside" id="1zd-hD-BoU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
