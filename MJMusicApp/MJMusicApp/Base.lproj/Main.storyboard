@@ -193,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="1802" y="-943"/>
         </scene>
-        <!--View Controller-->
+        <!--Off The Wall AlbumVC-->
         <scene sceneID="Wm1-do-Vvf">
             <objects>
-                <viewController id="i0H-jn-gkP" sceneMemberID="viewController">
+                <viewController id="i0H-jn-gkP" customClass="OffTheWallAlbumVC" customModule="MJMusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tEw-VZ-IbP"/>
                         <viewControllerLayoutGuide type="bottom" id="MeK-WO-Ywg"/>
@@ -204,12 +204,38 @@
                     <view key="view" contentMode="scaleToFill" id="9dW-Ny-xVk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OffTheWall" translatesAutoresizingMaskIntoConstraints="NO" id="wvY-tT-yPX">
+                                <rect key="frame" x="33" y="63" width="254" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="IeQ-u9-huW"/>
+                                    <constraint firstAttribute="height" constant="257" id="cbt-ey-h3e"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-PI-SCg">
+                                <rect key="frame" x="33" y="341" width="254" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="YW3-zw-egS"/>
+                                    <constraint firstAttribute="height" constant="176" id="jjX-XJ-w2S"/>
+                                </constraints>
+                                <string key="text">Off the Wall is the fifth studio album by American singer Michael Jackson, released on August 10, 1979 in the United States by Epic Records and internationally CBS Records. The record gained critical acclaim and recognition, and won the singer his first Grammy Award. The sold more than 20 million copies worldwide.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jeq-PI-SCg" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="M12-KE-PYA"/>
+                            <constraint firstItem="jeq-PI-SCg" firstAttribute="top" secondItem="wvY-tT-yPX" secondAttribute="bottom" constant="21" id="d9e-ut-F7X"/>
+                            <constraint firstItem="wvY-tT-yPX" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="sW0-OO-0VO"/>
+                            <constraint firstItem="wvY-tT-yPX" firstAttribute="top" secondItem="tEw-VZ-IbP" secondAttribute="bottom" constant="43" id="vSp-hg-vPZ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4q-ex-eju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="-294"/>
+            <point key="canvasLocation" x="1801.875" y="-294.71830985915494"/>
         </scene>
     </scenes>
     <resources>
