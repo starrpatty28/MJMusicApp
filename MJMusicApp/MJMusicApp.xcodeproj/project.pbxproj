@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8127D39D1E82F6500059FC58 /* ThrillerAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8127D39C1E82F6500059FC58 /* ThrillerAlbumVC.swift */; };
+		8127D39F1E82FA050059FC58 /* OffTheWallAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8127D39E1E82FA050059FC58 /* OffTheWallAlbumVC.swift */; };
 		817184E01E82E13400338126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817184DF1E82E13400338126 /* AppDelegate.swift */; };
 		817184E21E82E13400338126 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817184E11E82E13400338126 /* LoginVC.swift */; };
 		817184E51E82E13400338126 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817184E31E82E13400338126 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		8127D39C1E82F6500059FC58 /* ThrillerAlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillerAlbumVC.swift; sourceTree = "<group>"; };
+		8127D39E1E82FA050059FC58 /* OffTheWallAlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffTheWallAlbumVC.swift; sourceTree = "<group>"; };
 		817184DC1E82E13400338126 /* MJMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		817184DF1E82E13400338126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		817184E11E82E13400338126 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				817184EB1E82E13400338126 /* Info.plist */,
 				817184F11E82EC5900338126 /* AlbumList1VC.swift */,
 				8127D39C1E82F6500059FC58 /* ThrillerAlbumVC.swift */,
+				8127D39E1E82FA050059FC58 /* OffTheWallAlbumVC.swift */,
 			);
 			path = MJMusicApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8127D39F1E82FA050059FC58 /* OffTheWallAlbumVC.swift in Sources */,
 				8127D39D1E82F6500059FC58 /* ThrillerAlbumVC.swift in Sources */,
 				817184E21E82E13400338126 /* LoginVC.swift in Sources */,
 				817184E01E82E13400338126 /* AppDelegate.swift in Sources */,

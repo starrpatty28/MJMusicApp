@@ -95,20 +95,28 @@
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Michael_Jackson_-_Thriller" translatesAutoresizingMaskIntoConstraints="NO" id="Reb-EV-9ie">
                                 <rect key="frame" x="35.5" y="55" width="249" height="138"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="Xbl-0s-XAt"/>
                                     <constraint firstAttribute="height" constant="138" id="tme-nb-Ayb"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dei-MA-qPQ" appends="YES" id="GuN-tO-cVX"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OffTheWall" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-zZ-txP">
-                                <rect key="frame" x="35" y="201" width="249" height="138"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OffTheWall" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-zZ-txP">
+                                <rect key="frame" x="35.5" y="201" width="249" height="138"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="LaW-5Q-ir2"/>
                                     <constraint firstAttribute="height" constant="138" id="Zrl-gj-t31"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bIG-G3-pCb" appends="YES" id="sdd-Kj-l9K"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Michael_Jackson_-_Bad" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-e1-jNY">
-                                <rect key="frame" x="36" y="347" width="249" height="138"/>
+                                <rect key="frame" x="35.5" y="347" width="249" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="hxV-Zt-KY1"/>
                                     <constraint firstAttribute="width" constant="249" id="mxm-As-AbX"/>
@@ -125,15 +133,17 @@
                             <constraint firstItem="Reb-EV-9ie" firstAttribute="top" secondItem="3fV-vr-0g4" secondAttribute="bottom" constant="35" id="T8w-zV-d2a"/>
                             <constraint firstItem="Qfg-zZ-txP" firstAttribute="centerX" secondItem="UYp-0q-jyQ" secondAttribute="centerX" id="YPa-qz-BIO"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="1Un-V1-3un" appends="YES" id="wO1-kV-sI0"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puL-Ut-Q3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="1Un-V1-3un">
+                <tapGestureRecognizer id="dei-MA-qPQ">
                     <connections>
-                        <segue destination="doI-PB-07l" kind="presentation" id="enL-Ls-C53"/>
+                        <segue destination="doI-PB-07l" kind="presentation" id="7fV-Xt-jph"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bIG-G3-pCb">
+                    <connections>
+                        <segue destination="i0H-jn-gkP" kind="presentation" id="v0a-JK-fk7"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -150,12 +160,56 @@
                     <view key="view" contentMode="scaleToFill" id="k2O-2q-nWO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Michael_Jackson_-_Thriller" translatesAutoresizingMaskIntoConstraints="NO" id="2nG-KB-mwL">
+                                <rect key="frame" x="31.5" y="63" width="257" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="Qe2-tf-TUN"/>
+                                    <constraint firstAttribute="width" constant="257" id="xnJ-fI-9VH"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-R8-rqc">
+                                <rect key="frame" x="33" y="338" width="254" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="JRM-qE-ZRw"/>
+                                    <constraint firstAttribute="width" constant="254" id="Vwh-ug-qrD"/>
+                                </constraints>
+                                <string key="text">Michael Jackson’s Thriller continues to be the greatest album of all time. Thriller has become the first album in music history to be certified 33x platinum for United States sales and streams. That means the album has earned over 33 million equivalent album units. The King of Pop’s overall worldwide record sales now exceed the one billion mark.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2nG-KB-mwL" firstAttribute="centerX" secondItem="k2O-2q-nWO" secondAttribute="centerX" id="59y-Af-2Zy"/>
+                            <constraint firstItem="0ew-R8-rqc" firstAttribute="centerX" secondItem="k2O-2q-nWO" secondAttribute="centerX" id="Pf4-bz-Esi"/>
+                            <constraint firstItem="2nG-KB-mwL" firstAttribute="top" secondItem="Whg-4q-2X2" secondAttribute="bottom" constant="43" id="aHA-IX-NMw"/>
+                            <constraint firstItem="0ew-R8-rqc" firstAttribute="top" secondItem="2nG-KB-mwL" secondAttribute="bottom" constant="21" id="f5A-Mt-xh8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4R-Bm-xKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1453" y="-538"/>
+            <point key="canvasLocation" x="1802" y="-943"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wm1-do-Vvf">
+            <objects>
+                <viewController id="i0H-jn-gkP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tEw-VZ-IbP"/>
+                        <viewControllerLayoutGuide type="bottom" id="MeK-WO-Ywg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9dW-Ny-xVk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4q-ex-eju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="-294"/>
         </scene>
     </scenes>
     <resources>
