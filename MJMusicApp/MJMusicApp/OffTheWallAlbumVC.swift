@@ -20,6 +20,16 @@ class OffTheWallAlbumVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func youtubeBtnClkd(_ sender: Any) {
+        openURL(url: "https://www.youtube.com/watch?v=yURRmWtbTbo&list=PLwDOvNcLFeCnKHrLy1lSWhiyFUfyT0TTD")
+    }
+    
+    func openURL(url:String!) {
+        if let url = NSURL(string:url) {
+            UIApplication.shared.openURL(url as URL)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

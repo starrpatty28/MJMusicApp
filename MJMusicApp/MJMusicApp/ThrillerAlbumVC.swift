@@ -12,29 +12,26 @@ class ThrillerAlbumVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+ 
+    }
+    
+    @IBAction func youtubeClkd(_ sender: Any) {
+        openURL(url: "https://www.youtube.com/watch?v=CZqM_PgQ7BM&list=PLDs_1K5H3Lco3c8l0IMj0ZpOARsaDuwj1")
+    }
+    
+    func openURL(url:String!) {
+        if let url = NSURL(string:url) {
+            UIApplication.shared.openURL(url as URL)
+        }
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }

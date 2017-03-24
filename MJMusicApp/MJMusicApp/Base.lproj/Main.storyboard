@@ -127,16 +127,32 @@
                                     <outletCollection property="gestureRecognizers" destination="iPL-ft-8SV" appends="YES" id="eNM-jR-p3e"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzA-0H-HBX">
+                                <rect key="frame" x="16" y="509" width="99" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="1pS-KJ-AOn"/>
+                                    <constraint firstAttribute="height" constant="30" id="eYg-3S-rn0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Log Out...">
+                                    <color key="titleColor" red="1" green="0.16323402510000001" blue="0.1148980133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutBtn:" destination="R5r-1m-Gbl" eventType="touchUpInside" id="8cJ-7g-SDz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Reb-EV-9ie" firstAttribute="centerX" secondItem="UYp-0q-jyQ" secondAttribute="centerX" id="6Oi-z3-Nis"/>
+                            <constraint firstItem="bzA-0H-HBX" firstAttribute="top" secondItem="fhL-e1-jNY" secondAttribute="bottom" constant="24" id="6iq-5c-hUb"/>
                             <constraint firstItem="fhL-e1-jNY" firstAttribute="centerX" secondItem="UYp-0q-jyQ" secondAttribute="centerX" id="9t6-cs-JkK"/>
                             <constraint firstItem="fhL-e1-jNY" firstAttribute="top" secondItem="Qfg-zZ-txP" secondAttribute="bottom" constant="8" id="By8-B7-5R7"/>
                             <constraint firstItem="Qfg-zZ-txP" firstAttribute="top" secondItem="Reb-EV-9ie" secondAttribute="bottom" constant="8" id="IqP-sW-FWW"/>
                             <constraint firstItem="Reb-EV-9ie" firstAttribute="top" secondItem="3fV-vr-0g4" secondAttribute="bottom" constant="35" id="T8w-zV-d2a"/>
                             <constraint firstItem="Qfg-zZ-txP" firstAttribute="centerX" secondItem="UYp-0q-jyQ" secondAttribute="centerX" id="YPa-qz-BIO"/>
+                            <constraint firstItem="bzA-0H-HBX" firstAttribute="leading" secondItem="UYp-0q-jyQ" secondAttribute="leadingMargin" id="p9C-fY-U65"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -157,7 +173,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="677" y="-537"/>
+            <point key="canvasLocation" x="676.875" y="-537.67605633802816"/>
         </scene>
         <!--Thriller AlbumVC-->
         <scene sceneID="bdp-Pf-Vom">
@@ -179,7 +195,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-R8-rqc">
-                                <rect key="frame" x="33" y="338" width="254" height="176"/>
+                                <rect key="frame" x="33" y="332" width="254" height="176"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="176" id="JRM-qE-ZRw"/>
@@ -201,14 +217,27 @@
                                     <action selector="backBtnPressed:" destination="doI-PB-07l" eventType="touchUpInside" id="qjb-ZI-Jo7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6D5-Jw-Ctm">
+                                <rect key="frame" x="109" y="488" width="102" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="sz9-e9-w3f"/>
+                                    <constraint firstAttribute="width" constant="102" id="uFb-I8-dsq"/>
+                                </constraints>
+                                <state key="normal" image="youtube"/>
+                                <connections>
+                                    <action selector="youtubeClkd:" destination="doI-PB-07l" eventType="touchUpInside" id="yTi-lK-Z9H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6D5-Jw-Ctm" firstAttribute="centerX" secondItem="k2O-2q-nWO" secondAttribute="centerX" id="3Ta-jL-vxl"/>
                             <constraint firstItem="2nG-KB-mwL" firstAttribute="centerX" secondItem="k2O-2q-nWO" secondAttribute="centerX" id="59y-Af-2Zy"/>
                             <constraint firstItem="WNP-9q-rJY" firstAttribute="top" secondItem="Whg-4q-2X2" secondAttribute="bottom" id="DOu-fp-yjo"/>
                             <constraint firstItem="0ew-R8-rqc" firstAttribute="centerX" secondItem="k2O-2q-nWO" secondAttribute="centerX" id="Pf4-bz-Esi"/>
                             <constraint firstItem="2nG-KB-mwL" firstAttribute="top" secondItem="Whg-4q-2X2" secondAttribute="bottom" constant="43" id="aHA-IX-NMw"/>
-                            <constraint firstItem="0ew-R8-rqc" firstAttribute="top" secondItem="2nG-KB-mwL" secondAttribute="bottom" constant="21" id="f5A-Mt-xh8"/>
+                            <constraint firstItem="6D5-Jw-Ctm" firstAttribute="top" secondItem="2nG-KB-mwL" secondAttribute="bottom" constant="171" id="cCq-2A-Fy2"/>
+                            <constraint firstItem="0ew-R8-rqc" firstAttribute="top" secondItem="2nG-KB-mwL" secondAttribute="bottom" constant="15" id="f5A-Mt-xh8"/>
                             <constraint firstItem="WNP-9q-rJY" firstAttribute="leading" secondItem="k2O-2q-nWO" secondAttribute="leadingMargin" constant="17" id="srB-jM-qVe"/>
                         </constraints>
                     </view>
@@ -237,7 +266,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-PI-SCg">
-                                <rect key="frame" x="33" y="341" width="254" height="176"/>
+                                <rect key="frame" x="33" y="335" width="254" height="176"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="YW3-zw-egS"/>
@@ -259,11 +288,24 @@
                                     <action selector="backBtnPressed:" destination="i0H-jn-gkP" eventType="touchUpInside" id="32l-0H-FtF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EX-a3-nyb">
+                                <rect key="frame" x="109" y="491" width="102" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="L7e-eg-53x"/>
+                                    <constraint firstAttribute="width" constant="102" id="ZRC-hM-9un"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="youtube"/>
+                                <connections>
+                                    <action selector="youtubeBtnClkd:" destination="i0H-jn-gkP" eventType="touchUpInside" id="WSg-q7-Zjf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9EX-a3-nyb" firstAttribute="top" secondItem="wvY-tT-yPX" secondAttribute="bottom" constant="171" id="59w-3F-4pX"/>
+                            <constraint firstItem="9EX-a3-nyb" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="9dz-ag-tRm"/>
                             <constraint firstItem="jeq-PI-SCg" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="M12-KE-PYA"/>
-                            <constraint firstItem="jeq-PI-SCg" firstAttribute="top" secondItem="wvY-tT-yPX" secondAttribute="bottom" constant="21" id="d9e-ut-F7X"/>
+                            <constraint firstItem="jeq-PI-SCg" firstAttribute="top" secondItem="wvY-tT-yPX" secondAttribute="bottom" constant="15" id="d9e-ut-F7X"/>
                             <constraint firstItem="wvY-tT-yPX" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="sW0-OO-0VO"/>
                             <constraint firstItem="aNq-8o-Gvg" firstAttribute="top" secondItem="tEw-VZ-IbP" secondAttribute="bottom" id="unW-iP-qzK"/>
                             <constraint firstItem="wvY-tT-yPX" firstAttribute="top" secondItem="tEw-VZ-IbP" secondAttribute="bottom" constant="43" id="vSp-hg-vPZ"/>
@@ -295,13 +337,13 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7p-o9-9HG">
-                                <rect key="frame" x="33" y="341" width="254" height="176"/>
+                                <rect key="frame" x="33" y="335" width="254" height="176"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="H8A-aB-mNn"/>
                                     <constraint firstAttribute="height" constant="176" id="Ii2-eo-oPW"/>
                                 </constraints>
-                                <string key="text">Bad is the seventh studio album by American singer and songwriter Michael Jackson. It is his third studio album released through Epic Records. It was released on August 31, 1987, nearly five years after Jackson's previous solo studio album, Thriller. n 2017, the album was certified Diamond by the Recording Industry Association of America. </string>
+                                <string key="text">Bad is the seventh studio album by American singer and songwriter Michael Jackson. It is his third studio album released through Epic Records. It was released on August 31, 1987, nearly five years after Jackson's previous solo studio album, Thriller. n 2017, the album was certified Diamond. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -317,14 +359,27 @@
                                     <action selector="backBtnPressed:" destination="dH8-lE-99a" eventType="touchUpInside" id="1zd-hD-BoU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enS-zz-Lwb">
+                                <rect key="frame" x="109" y="491" width="102" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="2OJ-OO-Zgr"/>
+                                    <constraint firstAttribute="height" constant="57" id="jJz-y1-d66"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="youtube"/>
+                                <connections>
+                                    <action selector="youtubeBtnClkd:" destination="dH8-lE-99a" eventType="touchUpInside" id="5Yd-PJ-Jm0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="h7p-o9-9HG" firstAttribute="top" secondItem="hmf-R1-cLj" secondAttribute="bottom" constant="21" id="3RX-T4-OXH"/>
+                            <constraint firstItem="h7p-o9-9HG" firstAttribute="top" secondItem="hmf-R1-cLj" secondAttribute="bottom" constant="15" id="3RX-T4-OXH"/>
+                            <constraint firstItem="enS-zz-Lwb" firstAttribute="top" secondItem="hmf-R1-cLj" secondAttribute="bottom" constant="171" id="MGz-vg-KsN"/>
                             <constraint firstItem="cSP-GZ-X3f" firstAttribute="top" secondItem="89h-i2-top" secondAttribute="bottom" id="NgB-hi-1wL"/>
                             <constraint firstItem="h7p-o9-9HG" firstAttribute="centerX" secondItem="D8K-qe-irJ" secondAttribute="centerX" id="PhU-Cy-4jR"/>
                             <constraint firstItem="hmf-R1-cLj" firstAttribute="top" secondItem="89h-i2-top" secondAttribute="bottom" constant="43" id="eQ0-Dd-ZAC"/>
                             <constraint firstItem="cSP-GZ-X3f" firstAttribute="leading" secondItem="D8K-qe-irJ" secondAttribute="leadingMargin" constant="17" id="fN5-68-TbT"/>
+                            <constraint firstItem="enS-zz-Lwb" firstAttribute="centerX" secondItem="D8K-qe-irJ" secondAttribute="centerX" id="kzH-JS-rCi"/>
                             <constraint firstItem="hmf-R1-cLj" firstAttribute="centerX" secondItem="D8K-qe-irJ" secondAttribute="centerX" id="zxS-LT-JhY"/>
                         </constraints>
                     </view>
@@ -342,5 +397,6 @@
         <image name="OffTheWall" width="455" height="320"/>
         <image name="OffTheWallAlbum" width="508" height="504"/>
         <image name="ThrillerAlbum" width="2441" height="2229"/>
+        <image name="youtube" width="120" height="120"/>
     </resources>
 </document>
