@@ -78,6 +78,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passWordTxtFld" destination="au1-S2-9Vo" id="nhp-Cs-ktI"/>
                         <outlet property="userNameTxtFld" destination="nGj-cM-ONo" id="3zS-PG-VE2"/>
                     </connections>
                 </viewController>

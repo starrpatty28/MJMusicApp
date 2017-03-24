@@ -12,10 +12,17 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userNameTxtFld: UITextField!
 
+    @IBOutlet weak var passWordTxtFld: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameTxtFld.delegate = self
         userNameTxtFld.tag = 0
+        
+        passWordTxtFld.delegate = self
+        passWordTxtFld.tag = 0
+        
+        
     }
     
     func textFieldShouldReturn(_ userNameTxtField: UITextField) -> Bool
@@ -30,6 +37,20 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         // Do not add a line break
         return false
     }
+    
+    @nonobjc func passWordFieldShouldReturn(_ passWordTxtField: UITextField) -> Bool
+    {
+        // Try to find next responder
+        if let nextField = passWordTxtField.superview?.viewWithTag(passWordTxtField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            passWordTxtField.resignFirstResponder()
+        }
+        // Do not add a line break
+        return false
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
