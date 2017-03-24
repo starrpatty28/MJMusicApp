@@ -77,6 +77,9 @@
                             <constraint firstItem="nGj-cM-ONo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qi1-ri-EMc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userNameTxtFld" destination="nGj-cM-ONo" id="3zS-PG-VE2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
