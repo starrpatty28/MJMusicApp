@@ -329,6 +329,9 @@
                                 <state key="normal" title="Tap to play">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="playMusic:" destination="i0H-jn-gkP" eventType="touchUpInside" id="oAM-PD-je7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
