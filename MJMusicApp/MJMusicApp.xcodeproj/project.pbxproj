@@ -16,6 +16,7 @@
 		817184E71E82E13400338126 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817184E61E82E13400338126 /* Assets.xcassets */; };
 		817184EA1E82E13400338126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817184E81E82E13400338126 /* LaunchScreen.storyboard */; };
 		817184F21E82EC5900338126 /* AlbumList1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817184F11E82EC5900338126 /* AlbumList1VC.swift */; };
+		819526E21E85BF8D00BC1EA7 /* 40 Thriller.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526E11E85BF8D00BC1EA7 /* 40 Thriller.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		817184E91E82E13400338126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817184EB1E82E13400338126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		817184F11E82EC5900338126 /* AlbumList1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumList1VC.swift; sourceTree = "<group>"; };
+		819526E11E85BF8D00BC1EA7 /* 40 Thriller.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "40 Thriller.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +70,21 @@
 				817184E61E82E13400338126 /* Assets.xcassets */,
 				817184E81E82E13400338126 /* LaunchScreen.storyboard */,
 				817184EB1E82E13400338126 /* Info.plist */,
+				819526E31E85BFDA00BC1EA7 /* My Music */,
 				817184F11E82EC5900338126 /* AlbumList1VC.swift */,
 				8127D39C1E82F6500059FC58 /* ThrillerAlbumVC.swift */,
 				8127D39E1E82FA050059FC58 /* OffTheWallAlbumVC.swift */,
 				8127D3A01E8318FD0059FC58 /* BadAlbumVC.swift */,
 			);
 			path = MJMusicApp;
+			sourceTree = "<group>";
+		};
+		819526E31E85BFDA00BC1EA7 /* My Music */ = {
+			isa = PBXGroup;
+			children = (
+				819526E11E85BF8D00BC1EA7 /* 40 Thriller.mp3 */,
+			);
+			name = "My Music";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 				817184EA1E82E13400338126 /* LaunchScreen.storyboard in Resources */,
 				817184E71E82E13400338126 /* Assets.xcassets in Resources */,
 				817184E51E82E13400338126 /* Main.storyboard in Resources */,
+				819526E21E85BF8D00BC1EA7 /* 40 Thriller.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

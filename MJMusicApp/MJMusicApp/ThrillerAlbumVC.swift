@@ -7,13 +7,24 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ThrillerAlbumVC: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "40 Thriller", ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+        }
+        catch{
+            print(error)
+        }
     }
+    
     
     @IBAction func youtubeClkd(_ sender: Any) {
         openURL(url: "https://www.youtube.com/watch?v=CZqM_PgQ7BM&list=PLDs_1K5H3Lco3c8l0IMj0ZpOARsaDuwj1")
@@ -33,5 +44,10 @@ class ThrillerAlbumVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func playMusic(_ sender: Any) {
+        audioPlayer.play()
+    }
+    
   
 }
