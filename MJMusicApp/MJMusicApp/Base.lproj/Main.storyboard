@@ -320,23 +320,37 @@
                                     <action selector="youtubeBtnClkd:" destination="i0H-jn-gkP" eventType="touchUpInside" id="WSg-q7-Zjf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3g-Gl-bB6">
+                                <rect key="frame" x="49" y="63" width="222" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="5A4-Iv-paf"/>
+                                    <constraint firstAttribute="height" constant="222" id="ycD-CC-X9i"/>
+                                </constraints>
+                                <state key="normal" title="Tap to play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9EX-a3-nyb" firstAttribute="top" secondItem="wvY-tT-yPX" secondAttribute="bottom" constant="171" id="59w-3F-4pX"/>
                             <constraint firstItem="9EX-a3-nyb" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="9dz-ag-tRm"/>
+                            <constraint firstItem="F3g-Gl-bB6" firstAttribute="top" secondItem="aNq-8o-Gvg" secondAttribute="bottom" constant="13" id="Axb-Cd-uZb"/>
                             <constraint firstItem="jeq-PI-SCg" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="M12-KE-PYA"/>
+                            <constraint firstItem="F3g-Gl-bB6" firstAttribute="leading" secondItem="9dW-Ny-xVk" secondAttribute="leadingMargin" constant="33" id="aPi-At-zCM"/>
                             <constraint firstItem="jeq-PI-SCg" firstAttribute="top" secondItem="wvY-tT-yPX" secondAttribute="bottom" constant="15" id="d9e-ut-F7X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F3g-Gl-bB6" secondAttribute="trailing" constant="33" id="m7g-6D-ro8"/>
                             <constraint firstItem="wvY-tT-yPX" firstAttribute="centerX" secondItem="9dW-Ny-xVk" secondAttribute="centerX" id="sW0-OO-0VO"/>
                             <constraint firstItem="aNq-8o-Gvg" firstAttribute="top" secondItem="tEw-VZ-IbP" secondAttribute="bottom" id="unW-iP-qzK"/>
                             <constraint firstItem="wvY-tT-yPX" firstAttribute="top" secondItem="tEw-VZ-IbP" secondAttribute="bottom" constant="43" id="vSp-hg-vPZ"/>
+                            <constraint firstItem="jeq-PI-SCg" firstAttribute="top" secondItem="F3g-Gl-bB6" secondAttribute="bottom" constant="50" id="wOm-SD-Isw"/>
                             <constraint firstItem="aNq-8o-Gvg" firstAttribute="leading" secondItem="9dW-Ny-xVk" secondAttribute="leadingMargin" constant="17" id="yFb-ek-9Dh"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4q-ex-eju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1753" y="-509"/>
+            <point key="canvasLocation" x="1751.25" y="-509.15492957746477"/>
         </scene>
         <!--Bad AlbumVC-->
         <scene sceneID="hVX-f5-6CI">
