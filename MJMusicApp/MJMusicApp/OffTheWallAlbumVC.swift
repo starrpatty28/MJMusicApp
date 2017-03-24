@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class OffTheWallAlbumVC: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Do any additional setup after loading the view.
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "rock", ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+        }
+        catch {
+            print(error)
+        }
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
@@ -35,6 +45,7 @@ class OffTheWallAlbumVC: UIViewController {
     }
     
     @IBAction func playMusic(_ sender: Any) {
+        audioPlayer.play()
     }
     
 
