@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
 
 class BadAlbumVC: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "I'm Bad", ofType: "mp3")!))
+        }
+        catch {
+            print(error)
+        }
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
@@ -35,5 +43,9 @@ class BadAlbumVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func playSong(_ sender: Any) {
+        audioPlayer.play()
+        
+    }
 
 }

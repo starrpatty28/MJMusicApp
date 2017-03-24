@@ -408,6 +408,16 @@
                                     <action selector="youtubeBtnClkd:" destination="dH8-lE-99a" eventType="touchUpInside" id="5Yd-PJ-Jm0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFT-RI-kBz">
+                                <rect key="frame" x="33" y="69" width="254" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap to play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSong:" destination="dH8-lE-99a" eventType="touchUpInside" id="cGm-mF-LCd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -424,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tt9-K3-jtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="259"/>
+            <point key="canvasLocation" x="1747.5" y="258.80281690140845"/>
         </scene>
     </scenes>
     <resources>
