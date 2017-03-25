@@ -287,12 +287,21 @@
                     <view key="view" contentMode="scaleToFill" id="L4l-QN-0c3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ssJ-p3-D0v">
+                                <rect key="frame" x="22" y="75" width="277" height="219"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="NO5-Oq-G6P"/>
+                                    <constraint firstAttribute="height" constant="254" id="rKU-bl-NLc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWh-CF-k0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="503" y="221"/>
+            <point key="canvasLocation" x="502.5" y="220.77464788732394"/>
         </scene>
         <!--Thriller AlbumVC-->
         <scene sceneID="bdp-Pf-Vom">
