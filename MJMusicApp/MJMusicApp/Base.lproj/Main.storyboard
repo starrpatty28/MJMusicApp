@@ -145,19 +145,18 @@
                                     <action selector="logOutBtn:" destination="R5r-1m-Gbl" eventType="touchUpInside" id="8cJ-7g-SDz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPf-yj-hkT">
-                                <rect key="frame" x="198" y="509" width="99" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYz-Nv-hvY">
+                                <rect key="frame" x="185" y="510" width="99" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="99" id="SDb-si-ODN"/>
-                                    <constraint firstAttribute="height" constant="30" id="lBd-Cb-vNW"/>
+                                    <constraint firstAttribute="width" constant="99" id="3C1-q5-Cs1"/>
+                                    <constraint firstAttribute="height" constant="30" id="GDA-0O-8b2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="MORE">
+                                <state key="normal" title="More Music">
                                     <color key="titleColor" red="1" green="0.16323402510000001" blue="0.1148980133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logOutBtn:" destination="R5r-1m-Gbl" eventType="touchUpInside" id="pSr-Dv-it7"/>
-                                    <segue destination="q7f-md-QkU" kind="showDetail" id="wJL-x7-lCc"/>
+                                    <segue destination="q7f-md-QkU" kind="presentation" id="1S2-PX-foh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -168,12 +167,12 @@
                             <constraint firstItem="bzA-0H-HBX" firstAttribute="top" secondItem="fhL-e1-jNY" secondAttribute="bottom" constant="24" id="6iq-5c-hUb"/>
                             <constraint firstItem="fhL-e1-jNY" firstAttribute="centerX" secondItem="UYp-0q-jyQ" secondAttribute="centerX" id="9t6-cs-JkK"/>
                             <constraint firstItem="fhL-e1-jNY" firstAttribute="top" secondItem="Qfg-zZ-txP" secondAttribute="bottom" constant="8" id="By8-B7-5R7"/>
-                            <constraint firstItem="QPf-yj-hkT" firstAttribute="top" secondItem="fhL-e1-jNY" secondAttribute="bottom" constant="24" id="I0D-kU-ny0"/>
                             <constraint firstItem="Qfg-zZ-txP" firstAttribute="top" secondItem="Reb-EV-9ie" secondAttribute="bottom" constant="8" id="IqP-sW-FWW"/>
                             <constraint firstItem="Reb-EV-9ie" firstAttribute="top" secondItem="3fV-vr-0g4" secondAttribute="bottom" constant="35" id="T8w-zV-d2a"/>
                             <constraint firstItem="Qfg-zZ-txP" firstAttribute="centerX" secondItem="UYp-0q-jyQ" secondAttribute="centerX" id="YPa-qz-BIO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QPf-yj-hkT" secondAttribute="trailing" constant="7" id="met-Uc-YmJ"/>
+                            <constraint firstItem="nYz-Nv-hvY" firstAttribute="top" secondItem="fhL-e1-jNY" secondAttribute="bottom" constant="25" id="gPJ-Ud-Y1M"/>
                             <constraint firstItem="bzA-0H-HBX" firstAttribute="leading" secondItem="UYp-0q-jyQ" secondAttribute="leadingMargin" id="p9C-fY-U65"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nYz-Nv-hvY" secondAttribute="trailing" constant="20" id="wL5-A3-wBk"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -212,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJY-te-8as" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-360" y="275"/>
+            <point key="canvasLocation" x="-154" y="304"/>
         </scene>
         <!--Thriller AlbumVC-->
         <scene sceneID="bdp-Pf-Vom">
