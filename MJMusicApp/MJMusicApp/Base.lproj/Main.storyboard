@@ -214,16 +214,34 @@
                                     <constraint firstAttribute="height" constant="138" id="gIp-r6-s8d"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJHistory" translatesAutoresizingMaskIntoConstraints="NO" id="1Rl-rD-Vk2">
+                                <rect key="frame" x="36" y="209" width="249" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="Pwa-Xq-XsP"/>
+                                    <constraint firstAttribute="height" constant="138" id="WKt-4M-9IB"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-Qt-cKc">
                                 <rect key="frame" x="25" y="20" width="42" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Back"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJInvincible" translatesAutoresizingMaskIntoConstraints="NO" id="ef5-eC-Nfe">
+                                <rect key="frame" x="36" y="360" width="249" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="Z9G-PH-IhA"/>
+                                    <constraint firstAttribute="width" constant="249" id="nlH-OZ-QZq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HD6-3v-jFr" firstAttribute="top" secondItem="F33-Qt-cKc" secondAttribute="bottom" constant="5" id="69u-ZE-2JO"/>
+                            <constraint firstItem="ef5-eC-Nfe" firstAttribute="top" secondItem="1Rl-rD-Vk2" secondAttribute="bottom" constant="13" id="Gfr-Lx-Ga5"/>
+                            <constraint firstItem="ef5-eC-Nfe" firstAttribute="centerX" secondItem="vas-CN-NbX" secondAttribute="centerX" id="NEV-ta-pJI"/>
                             <constraint firstItem="F33-Qt-cKc" firstAttribute="leading" secondItem="vas-CN-NbX" secondAttribute="leadingMargin" constant="9" id="NIq-9N-H4x"/>
+                            <constraint firstItem="1Rl-rD-Vk2" firstAttribute="top" secondItem="HD6-3v-jFr" secondAttribute="bottom" constant="13" id="Wdc-eE-zwT"/>
+                            <constraint firstItem="1Rl-rD-Vk2" firstAttribute="centerX" secondItem="vas-CN-NbX" secondAttribute="centerX" id="cPm-IC-nA3"/>
                             <constraint firstItem="F33-Qt-cKc" firstAttribute="top" secondItem="L1q-1V-k3y" secondAttribute="bottom" id="wFQ-hs-1A6"/>
                             <constraint firstItem="HD6-3v-jFr" firstAttribute="centerX" secondItem="vas-CN-NbX" secondAttribute="centerX" id="yRZ-OC-LMr"/>
                         </constraints>
@@ -292,7 +310,7 @@
                                     <constraint firstAttribute="height" constant="254" id="WkC-KA-OaB"/>
                                     <constraint firstAttribute="width" constant="254" id="jg2-uj-i5e"/>
                                 </constraints>
-                                <state key="normal" title="Tap to play">
+                                <state key="normal" title="Tap to preview">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -380,7 +398,7 @@
                                     <constraint firstAttribute="width" constant="222" id="5A4-Iv-paf"/>
                                     <constraint firstAttribute="height" constant="222" id="ycD-CC-X9i"/>
                                 </constraints>
-                                <state key="normal" title="Tap to play">
+                                <state key="normal" title="Tap to preview">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -465,7 +483,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFT-RI-kBz">
                                 <rect key="frame" x="33" y="69" width="254" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tap to play">
+                                <state key="normal" title="Tap to preview">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -493,6 +511,8 @@
     </scenes>
     <resources>
         <image name="BadAlbum" width="480" height="360"/>
+        <image name="MJHistory" width="626" height="352"/>
+        <image name="MJInvincible" width="600" height="600"/>
         <image name="Michael_Jackson.svg" width="2000" height="3791"/>
         <image name="Michael_Jackson_-_Bad" width="300" height="300"/>
         <image name="Michael_Jackson_-_Thriller" width="300" height="300"/>
