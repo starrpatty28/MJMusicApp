@@ -179,6 +179,24 @@
             </objects>
             <point key="canvasLocation" x="676.875" y="-537.67605633802816"/>
         </scene>
+        <!--Album List2VC-->
+        <scene sceneID="eEH-K1-5Br">
+            <objects>
+                <viewController id="q7f-md-QkU" customClass="AlbumList2VC" customModule="MJMusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L1q-1V-k3y"/>
+                        <viewControllerLayoutGuide type="bottom" id="fPJ-y4-E9M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vas-CN-NbX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJY-te-8as" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="188"/>
+        </scene>
         <!--Thriller AlbumVC-->
         <scene sceneID="bdp-Pf-Vom">
             <objects>
