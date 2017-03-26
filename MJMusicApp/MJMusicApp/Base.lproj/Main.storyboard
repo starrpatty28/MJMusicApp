@@ -336,6 +336,9 @@
                                     <constraint firstAttribute="width" constant="102" id="yhG-KJ-B7j"/>
                                 </constraints>
                                 <state key="normal" image="youtube"/>
+                                <connections>
+                                    <action selector="youtubeBtnClkd:" destination="yGG-KZ-rjJ" eventType="touchUpInside" id="XvE-vt-h6m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
