@@ -16,6 +16,10 @@ class Dangerous_AlbumVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func youtubeBtnClkd(_ sender: Any) {
+    }
+    
+    
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
