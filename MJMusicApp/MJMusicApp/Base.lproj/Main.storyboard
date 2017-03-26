@@ -225,12 +225,16 @@
                                     <constraint firstAttribute="height" constant="138" id="WKt-4M-9IB"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJInvincible" translatesAutoresizingMaskIntoConstraints="NO" id="ef5-eC-Nfe">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJInvincible" translatesAutoresizingMaskIntoConstraints="NO" id="ef5-eC-Nfe">
                                 <rect key="frame" x="36" y="360" width="249" height="138"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="138" id="Z9G-PH-IhA"/>
                                     <constraint firstAttribute="width" constant="249" id="nlH-OZ-QZq"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6pg-7F-SBF" appends="YES" id="mLU-uk-zG1"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-Qt-cKc">
                                 <rect key="frame" x="25" y="20" width="42" height="33"/>
@@ -282,6 +286,11 @@
                         <segue destination="yGG-KZ-rjJ" kind="presentation" id="CTf-hu-65p"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="6pg-7F-SBF">
+                    <connections>
+                        <segue destination="s4e-PQ-WBn" kind="presentation" id="66E-th-kGu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-433" y="217"/>
         </scene>
@@ -325,7 +334,7 @@
                                     <constraint firstAttribute="height" constant="176" id="B7T-zT-Nch"/>
                                     <constraint firstAttribute="width" constant="254" id="JWq-yv-mqs"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">HIStory: Past, Present and Future, Book I, is the ninth studio album by American recording artist Michael Jackson, released on June 18, 1995. The themes include environmental awareness, isolation, greed, suicide, and injustice, and Jackson's conflicts with the media. By 1997 it had been certified six times platinum in Europe.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -366,7 +375,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8V-Xz-Uae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433.125" y="1054.2253521126761"/>
+            <point key="canvasLocation" x="-482" y="1076"/>
+        </scene>
+        <!--Invincible AlbumVC-->
+        <scene sceneID="CDs-gy-yEJ">
+            <objects>
+                <viewController id="s4e-PQ-WBn" customClass="Invincible_AlbumVC" customModule="MJMusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N0p-8k-UKG"/>
+                        <viewControllerLayoutGuide type="bottom" id="wQ5-AP-dij"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f2v-MK-9bO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVp-6B-xpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576" y="1075"/>
         </scene>
         <!--Dangerous AlbumVC-->
         <scene sceneID="zos-dC-ZB5">

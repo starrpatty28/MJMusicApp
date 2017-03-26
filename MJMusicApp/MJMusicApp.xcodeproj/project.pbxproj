@@ -25,6 +25,7 @@
 		819526EF1E87499700BC1EA7 /* History AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526EE1E87499700BC1EA7 /* History AlbumVC.swift */; };
 		819526F11E87506C00BC1EA7 /* theydontcare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526F01E87506C00BC1EA7 /* theydontcare.mp3 */; };
 		819526F31E87635400BC1EA7 /* Butterflies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526F21E87635400BC1EA7 /* Butterflies.mp3 */; };
+		819526F51E87668E00BC1EA7 /* Invincible AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526F41E87668E00BC1EA7 /* Invincible AlbumVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		819526EE1E87499700BC1EA7 /* History AlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "History AlbumVC.swift"; sourceTree = "<group>"; };
 		819526F01E87506C00BC1EA7 /* theydontcare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theydontcare.mp3; sourceTree = "<group>"; };
 		819526F21E87635400BC1EA7 /* Butterflies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Butterflies.mp3; sourceTree = "<group>"; };
+		819526F41E87668E00BC1EA7 /* Invincible AlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Invincible AlbumVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				819526E81E8710B000BC1EA7 /* AlbumList2VC.swift */,
 				819526EA1E87249100BC1EA7 /* Dangerous AlbumVC.swift */,
 				819526EE1E87499700BC1EA7 /* History AlbumVC.swift */,
+				819526F41E87668E00BC1EA7 /* Invincible AlbumVC.swift */,
 			);
 			path = MJMusicApp;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				8127D39D1E82F6500059FC58 /* ThrillerAlbumVC.swift in Sources */,
 				8127D3A11E8318FD0059FC58 /* BadAlbumVC.swift in Sources */,
 				819526EB1E87249100BC1EA7 /* Dangerous AlbumVC.swift in Sources */,
+				819526F51E87668E00BC1EA7 /* Invincible AlbumVC.swift in Sources */,
 				817184E21E82E13400338126 /* LoginVC.swift in Sources */,
 				817184E01E82E13400338126 /* AppDelegate.swift in Sources */,
 				817184F21E82EC5900338126 /* AlbumList1VC.swift in Sources */,
