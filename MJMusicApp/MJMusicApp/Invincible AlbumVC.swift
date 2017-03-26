@@ -7,16 +7,25 @@
 //
 
 import UIKit
-
+import AVFoundation
 
 class Invincible_AlbumVC: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Butterflies", ofType: "mp3")!))
+            audioPlayer.prepareToPlay()
+        }
+        catch {
+            print(error)
+        }
     }
-    
+ 
     @IBAction func youtubeBtnClkd(_ sender: Any) {
         openURL(url: "https://www.youtube.com/watch?v=7hDon6okRn4&list=PLJNbijG2M7OwRVl3OHUvBRlCOk0dgxXeR")
     }
@@ -37,6 +46,7 @@ class Invincible_AlbumVC: UIViewController {
     }
 
     @IBAction func tapToPreviewBtn(_ sender: Any) {
+        audioPlayer.play()
     }
     
 }
