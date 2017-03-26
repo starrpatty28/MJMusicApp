@@ -21,6 +21,7 @@
 		819526E71E85E61400BC1EA7 /* I'm Bad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526E61E85E61400BC1EA7 /* I'm Bad.mp3 */; };
 		819526E91E8710B000BC1EA7 /* AlbumList2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526E81E8710B000BC1EA7 /* AlbumList2VC.swift */; };
 		819526EB1E87249100BC1EA7 /* Dangerous AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526EA1E87249100BC1EA7 /* Dangerous AlbumVC.swift */; };
+		819526ED1E873B5F00BC1EA7 /* blackorwhite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		819526E61E85E61400BC1EA7 /* I'm Bad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "I'm Bad.mp3"; sourceTree = "<group>"; };
 		819526E81E8710B000BC1EA7 /* AlbumList2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumList2VC.swift; sourceTree = "<group>"; };
 		819526EA1E87249100BC1EA7 /* Dangerous AlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dangerous AlbumVC.swift"; sourceTree = "<group>"; };
+		819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blackorwhite.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		819526E31E85BFDA00BC1EA7 /* My Music */ = {
 			isa = PBXGroup;
 			children = (
+				819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */,
 				819526E61E85E61400BC1EA7 /* I'm Bad.mp3 */,
 				819526E41E85CCA500BC1EA7 /* rock.mp3 */,
 				819526E11E85BF8D00BC1EA7 /* 40 Thriller.mp3 */,
@@ -161,6 +164,7 @@
 			files = (
 				817184EA1E82E13400338126 /* LaunchScreen.storyboard in Resources */,
 				817184E71E82E13400338126 /* Assets.xcassets in Resources */,
+				819526ED1E873B5F00BC1EA7 /* blackorwhite.mp3 in Resources */,
 				817184E51E82E13400338126 /* Main.storyboard in Resources */,
 				819526E71E85E61400BC1EA7 /* I'm Bad.mp3 in Resources */,
 				819526E51E85CCA500BC1EA7 /* rock.mp3 in Resources */,

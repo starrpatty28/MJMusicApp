@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class Dangerous_AlbumVC: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +32,6 @@ class Dangerous_AlbumVC: UIViewController {
         }
     }
 
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

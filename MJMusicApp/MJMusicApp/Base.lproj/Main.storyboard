@@ -329,9 +329,12 @@
                                     <action selector="backBtnPressed:" destination="dVe-K7-5XC" eventType="touchUpInside" id="AGo-Uf-GKo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDj-GO-Evk">
-                                <rect key="frame" x="33" y="63" width="254" height="245"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDj-GO-Evk">
+                                <rect key="frame" x="33" y="63" width="254" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="B4h-bh-yiz"/>
+                                    <constraint firstAttribute="height" constant="254" id="eDf-9Z-Kdm"/>
+                                </constraints>
                                 <state key="normal" title="Tap to preview">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -339,13 +342,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gDj-GO-Evk" secondAttribute="trailing" constant="17" id="0Aw-l0-a3I"/>
                             <constraint firstItem="eTR-V1-1Nd" firstAttribute="top" secondItem="RUT-Nq-7O9" secondAttribute="bottom" id="3Dx-s4-EUp"/>
                             <constraint firstItem="IgP-p2-RS9" firstAttribute="centerX" secondItem="L4l-QN-0c3" secondAttribute="centerX" id="9jC-40-Vyg"/>
+                            <constraint firstItem="gDj-GO-Evk" firstAttribute="top" secondItem="eTR-V1-1Nd" secondAttribute="bottom" constant="13" id="ANH-g1-Xew"/>
                             <constraint firstItem="IgP-p2-RS9" firstAttribute="top" secondItem="dhy-J9-0aE" secondAttribute="bottom" id="GOg-ep-JLp"/>
                             <constraint firstItem="dhy-J9-0aE" firstAttribute="top" secondItem="ssJ-p3-D0v" secondAttribute="bottom" constant="15" id="R12-6g-90i"/>
                             <constraint firstItem="dhy-J9-0aE" firstAttribute="centerX" secondItem="L4l-QN-0c3" secondAttribute="centerX" id="Ypf-UD-xuv"/>
                             <constraint firstItem="ssJ-p3-D0v" firstAttribute="top" secondItem="RUT-Nq-7O9" secondAttribute="bottom" constant="43" id="deA-d5-O6K"/>
                             <constraint firstItem="ssJ-p3-D0v" firstAttribute="centerX" secondItem="L4l-QN-0c3" secondAttribute="centerX" id="frq-en-SOw"/>
+                            <constraint firstItem="gDj-GO-Evk" firstAttribute="leading" secondItem="L4l-QN-0c3" secondAttribute="leadingMargin" constant="17" id="l0Z-8P-AgP"/>
+                            <constraint firstItem="dhy-J9-0aE" firstAttribute="top" secondItem="gDj-GO-Evk" secondAttribute="bottom" constant="15" id="mGf-Qr-mzU"/>
                             <constraint firstItem="eTR-V1-1Nd" firstAttribute="leading" secondItem="L4l-QN-0c3" secondAttribute="leadingMargin" constant="17" id="uWv-Xu-SHe"/>
                         </constraints>
                     </view>
