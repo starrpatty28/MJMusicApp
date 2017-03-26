@@ -15,7 +15,12 @@ class Dangerous_AlbumVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "blackorwhite", ofType: "mp3")!))
+        }
+        catch {
+            print(error)
+        }
     }
     
     @IBAction func youtubeBtnClkd(_ sender: Any) {
@@ -38,6 +43,7 @@ class Dangerous_AlbumVC: UIViewController {
     }
     
     @IBAction func tapToPreview(_ sender: Any) {
+        audioPlayer.play()
     }
 
 }
