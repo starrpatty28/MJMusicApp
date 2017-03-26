@@ -289,14 +289,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dangerousalbum" translatesAutoresizingMaskIntoConstraints="NO" id="ssJ-p3-D0v">
-                                <rect key="frame" x="32" y="63" width="257" height="255"/>
+                                <rect key="frame" x="32" y="63" width="257" height="254"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="257" id="E5I-Fg-qbB"/>
                                     <constraint firstAttribute="height" constant="254" id="byf-N8-9ql"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhy-J9-0aE">
-                                <rect key="frame" x="33" y="333" width="254" height="176"/>
+                                <rect key="frame" x="33" y="332" width="254" height="176"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="iD8-9v-vTc"/>
@@ -307,7 +307,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgP-p2-RS9">
-                                <rect key="frame" x="109" y="509" width="102" height="52"/>
+                                <rect key="frame" x="109" y="508" width="102" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="102" id="kBz-Ko-P9m"/>
                                     <constraint firstAttribute="height" constant="52" id="mtG-1h-ymg"/>
@@ -330,7 +330,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXe-eB-yPF">
-                                <rect key="frame" x="33" y="63" width="255" height="255"/>
+                                <rect key="frame" x="33" y="62" width="255" height="255"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="255" id="5dG-nc-bG4"/>
                                     <constraint firstAttribute="height" constant="255" id="mm6-t7-FTV"/>
@@ -352,8 +352,6 @@
                             <constraint firstItem="RXe-eB-yPF" firstAttribute="leading" secondItem="L4l-QN-0c3" secondAttribute="leadingMargin" constant="17" id="GPs-cF-ThW"/>
                             <constraint firstItem="dhy-J9-0aE" firstAttribute="top" secondItem="ssJ-p3-D0v" secondAttribute="bottom" constant="15" id="R12-6g-90i"/>
                             <constraint firstItem="dhy-J9-0aE" firstAttribute="centerX" secondItem="L4l-QN-0c3" secondAttribute="centerX" id="Ypf-UD-xuv"/>
-                            <constraint firstItem="RXe-eB-yPF" firstAttribute="top" secondItem="eTR-V1-1Nd" secondAttribute="bottom" constant="13" id="bXf-ij-GI7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RXe-eB-yPF" secondAttribute="trailing" constant="17" id="cKR-fI-KYd"/>
                             <constraint firstItem="ssJ-p3-D0v" firstAttribute="top" secondItem="RUT-Nq-7O9" secondAttribute="bottom" constant="43" id="deA-d5-O6K"/>
                             <constraint firstItem="ssJ-p3-D0v" firstAttribute="centerX" secondItem="L4l-QN-0c3" secondAttribute="centerX" id="frq-en-SOw"/>
                             <constraint firstItem="eTR-V1-1Nd" firstAttribute="leading" secondItem="L4l-QN-0c3" secondAttribute="leadingMargin" constant="17" id="uWv-Xu-SHe"/>
@@ -363,6 +361,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWh-CF-k0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="502.5" y="220.77464788732394"/>
+        </scene>
+        <!--Dangerous AlbumVC-->
+        <scene sceneID="V3c-Tc-pZa">
+            <objects>
+                <viewController id="cKC-G1-ttN" customClass="Dangerous_AlbumVC" customModule="MJMusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D95-gn-tss"/>
+                        <viewControllerLayoutGuide type="bottom" id="MNw-rf-QHj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MLc-UF-e2z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IuI-zc-zgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-315" y="926"/>
         </scene>
         <!--Thriller AlbumVC-->
         <scene sceneID="bdp-Pf-Vom">

@@ -22,6 +22,7 @@
 		819526E91E8710B000BC1EA7 /* AlbumList2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526E81E8710B000BC1EA7 /* AlbumList2VC.swift */; };
 		819526EB1E87249100BC1EA7 /* Dangerous AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526EA1E87249100BC1EA7 /* Dangerous AlbumVC.swift */; };
 		819526ED1E873B5F00BC1EA7 /* blackorwhite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */; };
+		819526EF1E87499700BC1EA7 /* History AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526EE1E87499700BC1EA7 /* History AlbumVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		819526E81E8710B000BC1EA7 /* AlbumList2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumList2VC.swift; sourceTree = "<group>"; };
 		819526EA1E87249100BC1EA7 /* Dangerous AlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dangerous AlbumVC.swift"; sourceTree = "<group>"; };
 		819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blackorwhite.mp3; sourceTree = "<group>"; };
+		819526EE1E87499700BC1EA7 /* History AlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "History AlbumVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				8127D3A01E8318FD0059FC58 /* BadAlbumVC.swift */,
 				819526E81E8710B000BC1EA7 /* AlbumList2VC.swift */,
 				819526EA1E87249100BC1EA7 /* Dangerous AlbumVC.swift */,
+				819526EE1E87499700BC1EA7 /* History AlbumVC.swift */,
 			);
 			path = MJMusicApp;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				819526E91E8710B000BC1EA7 /* AlbumList2VC.swift in Sources */,
+				819526EF1E87499700BC1EA7 /* History AlbumVC.swift in Sources */,
 				8127D39F1E82FA050059FC58 /* OffTheWallAlbumVC.swift in Sources */,
 				8127D39D1E82F6500059FC58 /* ThrillerAlbumVC.swift in Sources */,
 				8127D3A11E8318FD0059FC58 /* BadAlbumVC.swift in Sources */,
