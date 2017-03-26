@@ -17,8 +17,14 @@ class Dangerous_AlbumVC: UIViewController {
     }
     
     @IBAction func youtubeBtnClkd(_ sender: Any) {
+        openURL(url: "https://www.youtube.com/watch?v=8IQS_8y-si0&index=4&list=PL15ty5GYCv5u0_w7pusvZtUP225slLmRT")
     }
     
+    func openURL(url:String!) {
+        if let url = NSURL(string:url) {
+            UIApplication.shared.openURL(url as URL)
+        }
+    }
     
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
