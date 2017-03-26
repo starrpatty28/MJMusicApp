@@ -340,6 +340,16 @@
                                     <action selector="youtubeBtnClkd:" destination="yGG-KZ-rjJ" eventType="touchUpInside" id="XvE-vt-h6m"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zue-od-Z5T">
+                                <rect key="frame" x="33" y="63" width="256" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap to preview">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPreviewBtn:" destination="yGG-KZ-rjJ" eventType="touchUpInside" id="I8v-ip-Hhr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -699,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tt9-K3-jtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877" y="249"/>
+            <point key="canvasLocation" x="1751" y="249"/>
         </scene>
     </scenes>
     <resources>

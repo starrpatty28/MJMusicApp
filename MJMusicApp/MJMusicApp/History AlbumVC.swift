@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import AVFoundation
 
 class History_AlbumVC: UIViewController {
+    
+    var audioPLayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        do {
+            audioPLayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "theydontcare", ofType: "mp3")!))
+        }
+        catch {
+            print(error)
+        }
+        
     }
     
     @IBAction func youtubeBtnClkd(_ sender: Any) {
@@ -35,15 +44,10 @@ class History_AlbumVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func playPreviewBtn(_ sender: Any) {
+        audioPLayer.play()
+        
     }
-    */
+
 
 }
