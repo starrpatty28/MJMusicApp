@@ -218,7 +218,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Lnp-Lh-c0y" appends="YES" id="90T-jL-3P1"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJHistory" translatesAutoresizingMaskIntoConstraints="NO" id="1Rl-rD-Vk2">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MJHistory" translatesAutoresizingMaskIntoConstraints="NO" id="1Rl-rD-Vk2">
                                 <rect key="frame" x="36" y="209" width="249" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="Pwa-Xq-XsP"/>
@@ -252,6 +252,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="HD6-3v-jFr" firstAttribute="top" secondItem="F33-Qt-cKc" secondAttribute="bottom" constant="5" id="69u-ZE-2JO"/>
                             <constraint firstItem="ef5-eC-Nfe" firstAttribute="top" secondItem="1Rl-rD-Vk2" secondAttribute="bottom" constant="13" id="Gfr-Lx-Ga5"/>
@@ -265,6 +266,9 @@
                             <constraint firstItem="HD6-3v-jFr" firstAttribute="centerX" secondItem="vas-CN-NbX" secondAttribute="centerX" id="yRZ-OC-LMr"/>
                             <constraint firstItem="QwW-ef-bA3" firstAttribute="centerX" secondItem="vas-CN-NbX" secondAttribute="centerX" id="yqS-oR-9Ho"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yb8-9w-8vz" appends="YES" id="re7-4j-3Ay"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJY-te-8as" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,8 +277,73 @@
                         <segue destination="dVe-K7-5XC" kind="presentation" id="RVb-39-DHl"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="yb8-9w-8vz">
+                    <connections>
+                        <segue destination="yGG-KZ-rjJ" kind="presentation" id="CTf-hu-65p"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-315" y="221"/>
+            <point key="canvasLocation" x="-433" y="217"/>
+        </scene>
+        <!--History AlbumVC-->
+        <scene sceneID="ENx-0s-JFh">
+            <objects>
+                <viewController id="yGG-KZ-rjJ" customClass="History_AlbumVC" customModule="MJMusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BTo-rG-te7"/>
+                        <viewControllerLayoutGuide type="bottom" id="uzo-NV-o3C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="omc-kz-mIf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="historyalbum" translatesAutoresizingMaskIntoConstraints="NO" id="pyk-SY-clJ">
+                                <rect key="frame" x="32" y="63" width="257" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="1hR-rV-yyK"/>
+                                    <constraint firstAttribute="width" constant="257" id="ec4-hW-o0q"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3p-lp-5rD">
+                                <rect key="frame" x="32" y="20" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="hzs-yE-hHC"/>
+                                    <constraint firstAttribute="height" constant="30" id="suW-7b-pYo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="yGG-KZ-rjJ" eventType="touchUpInside" id="zUB-6w-KQp"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Om8-Fz-96m">
+                                <rect key="frame" x="33" y="332" width="254" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="B7T-zT-Nch"/>
+                                    <constraint firstAttribute="width" constant="254" id="JWq-yv-mqs"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pyk-SY-clJ" firstAttribute="top" secondItem="BTo-rG-te7" secondAttribute="bottom" constant="43" id="3Pd-So-nmY"/>
+                            <constraint firstItem="X3p-lp-5rD" firstAttribute="leading" secondItem="omc-kz-mIf" secondAttribute="leadingMargin" constant="16" id="MQj-0t-W4s"/>
+                            <constraint firstItem="Om8-Fz-96m" firstAttribute="top" secondItem="pyk-SY-clJ" secondAttribute="bottom" constant="15" id="cLf-el-Akb"/>
+                            <constraint firstItem="X3p-lp-5rD" firstAttribute="top" secondItem="BTo-rG-te7" secondAttribute="bottom" id="lJl-aU-Y4x"/>
+                            <constraint firstItem="pyk-SY-clJ" firstAttribute="centerX" secondItem="omc-kz-mIf" secondAttribute="centerX" id="pb2-fh-4dp"/>
+                            <constraint firstItem="Om8-Fz-96m" firstAttribute="centerX" secondItem="omc-kz-mIf" secondAttribute="centerX" id="qr1-P8-bzv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8V-Xz-Uae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.125" y="1054.2253521126761"/>
         </scene>
         <!--Dangerous AlbumVC-->
         <scene sceneID="zos-dC-ZB5">
@@ -360,25 +429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWh-CF-k0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502.5" y="220.77464788732394"/>
-        </scene>
-        <!--Dangerous AlbumVC-->
-        <scene sceneID="V3c-Tc-pZa">
-            <objects>
-                <viewController id="cKC-G1-ttN" customClass="Dangerous_AlbumVC" customModule="MJMusicApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="D95-gn-tss"/>
-                        <viewControllerLayoutGuide type="bottom" id="MNw-rf-QHj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MLc-UF-e2z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IuI-zc-zgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-315" y="926"/>
+            <point key="canvasLocation" x="677" y="221"/>
         </scene>
         <!--Thriller AlbumVC-->
         <scene sceneID="bdp-Pf-Vom">
@@ -635,7 +686,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tt9-K3-jtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768" y="217"/>
+            <point key="canvasLocation" x="1877" y="249"/>
         </scene>
     </scenes>
     <resources>
@@ -650,6 +701,7 @@
         <image name="ThrillerAlbum" width="2441" height="2229"/>
         <image name="dangerous" width="1262" height="1264"/>
         <image name="dangerousalbum" width="1262" height="1264"/>
+        <image name="historyalbum" width="600" height="600"/>
         <image name="youtube" width="120" height="120"/>
     </resources>
 </document>
