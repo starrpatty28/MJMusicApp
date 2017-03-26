@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class Invincible_AlbumVC: UIViewController {
 
     override func viewDidLoad() {
@@ -35,5 +36,7 @@ class Invincible_AlbumVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tapToPreviewBtn(_ sender: Any) {
+    }
     
 }

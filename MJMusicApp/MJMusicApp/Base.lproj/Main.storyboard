@@ -444,6 +444,9 @@
                                 <state key="normal" title="Tap to preview">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapToPreviewBtn:" destination="s4e-PQ-WBn" eventType="touchUpInside" id="CTV-BI-9Pt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
