@@ -329,10 +329,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVo-en-Ouw">
+                                <rect key="frame" x="109" y="508" width="102" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="UB9-to-2bC"/>
+                                    <constraint firstAttribute="width" constant="102" id="yhG-KJ-B7j"/>
+                                </constraints>
+                                <state key="normal" image="youtube"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MVo-en-Ouw" firstAttribute="top" secondItem="Om8-Fz-96m" secondAttribute="bottom" id="05N-dR-5K7"/>
                             <constraint firstItem="pyk-SY-clJ" firstAttribute="top" secondItem="BTo-rG-te7" secondAttribute="bottom" constant="43" id="3Pd-So-nmY"/>
+                            <constraint firstItem="MVo-en-Ouw" firstAttribute="centerX" secondItem="omc-kz-mIf" secondAttribute="centerX" id="Bld-Fj-ati"/>
                             <constraint firstItem="X3p-lp-5rD" firstAttribute="leading" secondItem="omc-kz-mIf" secondAttribute="leadingMargin" constant="16" id="MQj-0t-W4s"/>
                             <constraint firstItem="Om8-Fz-96m" firstAttribute="top" secondItem="pyk-SY-clJ" secondAttribute="bottom" constant="15" id="cLf-el-Akb"/>
                             <constraint firstItem="X3p-lp-5rD" firstAttribute="top" secondItem="BTo-rG-te7" secondAttribute="bottom" id="lJl-aU-Y4x"/>
