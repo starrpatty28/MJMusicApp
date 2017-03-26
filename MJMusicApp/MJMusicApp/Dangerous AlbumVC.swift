@@ -7,8 +7,10 @@
 //
 
 import UIKit
-
+import AVFoundation
 class Dangerous_AlbumVC: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
