@@ -26,6 +26,8 @@
 		819526F11E87506C00BC1EA7 /* theydontcare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526F01E87506C00BC1EA7 /* theydontcare.mp3 */; };
 		819526F31E87635400BC1EA7 /* Butterflies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526F21E87635400BC1EA7 /* Butterflies.mp3 */; };
 		819526F51E87668E00BC1EA7 /* Invincible AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526F41E87668E00BC1EA7 /* Invincible AlbumVC.swift */; };
+		819526FB1E8796EC00BC1EA7 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526FA1E8796EC00BC1EA7 /* Swift+Gif.swift */; };
+		819526FD1E8798CF00BC1EA7 /* 200w_d.gif in Resources */ = {isa = PBXBuildFile; fileRef = 819526FC1E8798CF00BC1EA7 /* 200w_d.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		819526F01E87506C00BC1EA7 /* theydontcare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theydontcare.mp3; sourceTree = "<group>"; };
 		819526F21E87635400BC1EA7 /* Butterflies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Butterflies.mp3; sourceTree = "<group>"; };
 		819526F41E87668E00BC1EA7 /* Invincible AlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Invincible AlbumVC.swift"; sourceTree = "<group>"; };
+		819526FA1E8796EC00BC1EA7 /* Swift+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		819526FC1E8798CF00BC1EA7 /* 200w_d.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 200w_d.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,9 @@
 				817184DF1E82E13400338126 /* AppDelegate.swift */,
 				817184E11E82E13400338126 /* LoginVC.swift */,
 				817184E31E82E13400338126 /* Main.storyboard */,
+				819526FA1E8796EC00BC1EA7 /* Swift+Gif.swift */,
 				817184E61E82E13400338126 /* Assets.xcassets */,
+				819526FC1E8798CF00BC1EA7 /* 200w_d.gif */,
 				817184E81E82E13400338126 /* LaunchScreen.storyboard */,
 				817184EB1E82E13400338126 /* Info.plist */,
 				819526E31E85BFDA00BC1EA7 /* My Music */,
@@ -176,6 +182,7 @@
 			files = (
 				817184EA1E82E13400338126 /* LaunchScreen.storyboard in Resources */,
 				819526F31E87635400BC1EA7 /* Butterflies.mp3 in Resources */,
+				819526FD1E8798CF00BC1EA7 /* 200w_d.gif in Resources */,
 				817184E71E82E13400338126 /* Assets.xcassets in Resources */,
 				819526ED1E873B5F00BC1EA7 /* blackorwhite.mp3 in Resources */,
 				817184E51E82E13400338126 /* Main.storyboard in Resources */,
@@ -201,6 +208,7 @@
 				819526EB1E87249100BC1EA7 /* Dangerous AlbumVC.swift in Sources */,
 				819526F51E87668E00BC1EA7 /* Invincible AlbumVC.swift in Sources */,
 				817184E21E82E13400338126 /* LoginVC.swift in Sources */,
+				819526FB1E8796EC00BC1EA7 /* Swift+Gif.swift in Sources */,
 				817184E01E82E13400338126 /* AppDelegate.swift in Sources */,
 				817184F21E82EC5900338126 /* AlbumList1VC.swift in Sources */,
 			);

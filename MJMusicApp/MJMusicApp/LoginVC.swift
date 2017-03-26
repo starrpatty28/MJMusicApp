@@ -10,12 +10,17 @@ import UIKit
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var gifView: UIImageView!
+    
     @IBOutlet weak var userNameTxtFld: UITextField!
 
     @IBOutlet weak var passWordTxtFld: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gifView.loadGif(name: "200w_d")
+        
         userNameTxtFld.delegate = self
         userNameTxtFld.tag = 0
         
@@ -56,6 +61,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
 
 }
