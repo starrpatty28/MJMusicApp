@@ -24,6 +24,7 @@
 		819526ED1E873B5F00BC1EA7 /* blackorwhite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */; };
 		819526EF1E87499700BC1EA7 /* History AlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819526EE1E87499700BC1EA7 /* History AlbumVC.swift */; };
 		819526F11E87506C00BC1EA7 /* theydontcare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526F01E87506C00BC1EA7 /* theydontcare.mp3 */; };
+		819526F31E87635400BC1EA7 /* Butterflies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 819526F21E87635400BC1EA7 /* Butterflies.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blackorwhite.mp3; sourceTree = "<group>"; };
 		819526EE1E87499700BC1EA7 /* History AlbumVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "History AlbumVC.swift"; sourceTree = "<group>"; };
 		819526F01E87506C00BC1EA7 /* theydontcare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theydontcare.mp3; sourceTree = "<group>"; };
+		819526F21E87635400BC1EA7 /* Butterflies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Butterflies.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		819526E31E85BFDA00BC1EA7 /* My Music */ = {
 			isa = PBXGroup;
 			children = (
+				819526F21E87635400BC1EA7 /* Butterflies.mp3 */,
 				819526F01E87506C00BC1EA7 /* theydontcare.mp3 */,
 				819526EC1E873B5F00BC1EA7 /* blackorwhite.mp3 */,
 				819526E61E85E61400BC1EA7 /* I'm Bad.mp3 */,
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				817184EA1E82E13400338126 /* LaunchScreen.storyboard in Resources */,
+				819526F31E87635400BC1EA7 /* Butterflies.mp3 in Resources */,
 				817184E71E82E13400338126 /* Assets.xcassets in Resources */,
 				819526ED1E873B5F00BC1EA7 /* blackorwhite.mp3 in Resources */,
 				817184E51E82E13400338126 /* Main.storyboard in Resources */,
